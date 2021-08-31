@@ -51,7 +51,7 @@ div.appendChild(a2);
 div.appendChild(a3);
 
 var nav = document.createElement('nav');
-nav.setAttribute('class','row');
+//nav.setAttribute('class','row');
 nav.appendChild(div);
 
 
@@ -74,6 +74,22 @@ var span = document.createElement('span');
 span.setAttribute('class','row');
 span.appendChild(div);
 
-var body = document.querySelector('body');
+//var body = document.querySelector('body');
 body.appendChild(span);
+
+
+//test
+var h2 = document.createElement('h2');
+h2.innerHTML="<h2>this is the third row</h2>"
+
+var p2 = document.createElement('p');
+p.innerText ="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet quidem itaque, pariatur ab voluptates aliquam impedit numquam. Sit est, saepe inventore voluptatibus maiores id aut iure vitae qui tenetur vero?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet quidem itaque, pariatur ab voluptates aliquam impedit numquam. Sit est, saepe inventore voluptatibus maiores id aut iure vitae qui tenetur vero?"
+
+var div = document.createElement("div")
+div.setAttribute("class","col-12 d-flex flex-column justify-content-start gray my-5")
+div.appendChild(h2);
+div.appendChild(p2);
+
+body.appendChild(div);
+
 
